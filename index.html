@@ -229,7 +229,7 @@
     <div class="container">  
         <div class="row">
             <div class="col l6 s12">
-                <form class="col s12" action="#" method="post">
+                <form class="col s12">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-action-account-circle prefix white-text"></i>
@@ -295,24 +295,24 @@
     <script src="min/custom-min.js"></script>
 	<script>
 		function sendMail() {
-			alert('asdfkas')
+			alert(document.getElementsByName("email")[0].value)
     		$.ajax({
       			type: 'POST',
       			url: 'https://mandrillapp.com/api/1.0/messages/send.json',
       			data: {
         			'key': 'RhJcbVQuZGDYVSO_xXbCmg',
         			'message': {
-        	  			'from_email': 'vikas.dumca2012@gmail.com',
+        	  			'from_email': document.getElementsByName("email")[0].value,
         	  			'to': [
         	      			{
         	        		'email': 'vikas.dumca2012@gmail.com',
-        	        		'name': 'RECIPIENT NAME (OPTIONAL)',
+        	        		'name': 'Vikas Kumar Thakur',
         	        		'type': 'to'
         	      			}
         	    		],
         	  			'autotext': 'true',
-        	  			'subject': 'YOUR SUBJECT HERE!',
-        	  			'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+        	  			'subject': 'vikasdumca.github.io - query',
+        	  			'html': document.getElementsByName("message")[0].value
         			}
       			}
      		}).done(function(response) {
