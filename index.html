@@ -295,7 +295,7 @@
     <script src="min/custom-min.js"></script>
 	<script>
 		function sendMail() {
-			alert(document.getElementsByName("email")[0].value)
+			//alert(document.getElementsByName("email")[0].value)
     		$.ajax({
       			type: 'POST',
       			url: 'https://mandrillapp.com/api/1.0/messages/send.json',
