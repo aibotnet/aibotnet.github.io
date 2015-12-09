@@ -13,7 +13,7 @@
     padding: 0 15px;
 }
 
-#intro, #work, #team {padding-top: 4rem;}
+#intro, #work, #team {padding-top: 2rem;}
 
 
 #index-banner {
@@ -29,8 +29,8 @@
 }
 
 .text_h {
-    padding: 10% 0;
-    font-size: 6.0em;
+    padding: 5% 0;
+    font-size: 5.0em;
     font-weight: 100;
     color:white;
 }
